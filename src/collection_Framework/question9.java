@@ -18,9 +18,23 @@ public class question9 {
 		al.add("srv");
 		al.add("srgtv");
 		al.add("gvvrsc");
-		Iterator<E> a=al.iterator();
+		Iterator a=al.iterator();
 		while(a.hasNext()) {
+		Object b= a.Next();
+		if(b instanceof String) {
+			String s=(String) b;
 			
+			if(s>s.length) {}
+			/*// Find smallest string (lexicographically)
+        String min = strings.stream().min(Comparator.naturalOrder()).get();
+
+        // Find largest string (lexicographically)
+        String max = strings.stream().max(Comparator.naturalOrder()).get();
+
+        System.out.println("Smallest String: " + min);
+        System.out.println("Largest String: " + max);*/
+			
+		}
 		}
 	}
 
