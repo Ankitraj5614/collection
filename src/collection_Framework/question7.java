@@ -12,11 +12,11 @@ import java.util.Iterator;
 
 public class question7 {
 	public static void main(String[] args) {
-		ArrayList s1=new ArrayList();
+		ArrayList<Integer> s1=new ArrayList();
 		s1.add(12);		s1.add(342);		s1.add(234);
 		s1.add(11);		s1.add(3445);		s1.add(21);
-		int max = numbers.stream().max(Integer::compare).get();
-        int min = numbers.stream().min(Integer::compare).get();
+		int max = s1.stream().max(Integer::compare).get();
+        int min = s1.stream().min(Integer::compare).get();
 
         System.out.println("Using Stream API:");
         System.out.println("Maximum: " + max);
