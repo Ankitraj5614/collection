@@ -21,6 +21,13 @@ public class question10 {
 			if(!(ob instanceof Integer))
 			s.remove();
 		}
-		System.out.println("only integer is used list"+s1);
+		/*System.out.println("only integer is used list"+s1);
+		List<Integer> integerList = list.stream()
+                .filter(e -> e instanceof Integer)
+                .map(e -> (Integer) e)
+                .collect(Collectors.toList());
+
+System.out.println("Only Integers (using Stream): " + integerList);
+*/
     }
 }
