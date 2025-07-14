@@ -9,8 +9,10 @@ import java.util.Iterator;
 public class question9 {
 
 	public static void main(String[] args) {
-		ArrayList al = new ArrayList();
-		al.add("3454");
+		
+		System.out.println(" Start main method .......");
+		ArrayList<String> al = new ArrayList<>();
+
 		al.add("rsf");
 		al.add("gssd");
 		al.add("rgrgr");
@@ -18,24 +20,23 @@ public class question9 {
 		al.add("srv");
 		al.add("srgtv");
 		al.add("gvvrsc");
-		Iterator a=al.iterator();
-		while(a.hasNext()) {
-		Object b= a.Next();
-		if(b instanceof String) {
-			String s=(String) b;
+		
+		String biggest = al.get(0);
+		String smallest = al.get(0);
+		
+		for(String x : al)
+		{
+			if(x.length()>biggest.length())
+				biggest=x;
 			
-			if(s>s.length) {}
-			/*// Find smallest string (lexicographically)
-        String min = strings.stream().min(Comparator.naturalOrder()).get();
-
-        // Find largest string (lexicographically)
-        String max = strings.stream().max(Comparator.naturalOrder()).get();
-
-        System.out.println("Smallest String: " + min);
-        System.out.println("Largest String: " + max);*/
-			
+			else if(x.length()<smallest.length())
+				smallest=x;
 		}
-		}
+		
+		System.out.println( biggest +" has biggest length = "+ biggest.length());
+		System.out.println( smallest +" has biggest length = "+ smallest.length());
+		
+		
 	}
 
 }
